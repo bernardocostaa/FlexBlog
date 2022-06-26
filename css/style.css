@@ -88,9 +88,21 @@ margin-top: 0 10px 10px 10px;
 
 /* Sobre */
 
+.linha-div{
+  height: 5px;
+  position: sticky;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 960px;
+}
+.linha-sobre{
+  width: 0px;
+  background-color: #2c70ff;
+  height: 100%;
+  transition: all ease 3s;
+
+}
 .sobre{
-  border-top:2px solid #2c70ff ;
-  border-bottom: 2px solid #2c70ff;
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 0;
