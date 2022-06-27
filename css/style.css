@@ -365,6 +365,46 @@ margin-top: 0 10px 10px 10px;
   display: none;
 }
 
+@keyframes animaFoto{
+  from{
+    opacity: 0;
+    transform: translate3d(0,-80px,0);
+    transition: .6s;
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes animaFoto2{
+  from{
+    opacity: 0;
+    transform: translate3d(0,80px,0);
+    transition: .6s;
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes showTexto{
+  from{
+    opacity: 0;
+    transition: 1.5s;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.jsShowTexto{
+  animation: showTexto 3s forwards;
+}
+.jsShowFoto{
+  animation: animaFoto 3s forwards;
+}
+.jsShowFoto2{
+  animation: animaFoto2 3s forwards;
+}
 @media(max-width:800px) {
   .preco{
     padding-left: 10px;

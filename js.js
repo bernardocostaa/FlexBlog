@@ -22,15 +22,18 @@ function aparecerBotaoScroll(){
   let verifica = window.scrollY
   let botao = document.querySelector('.bolaScroll')
 
-  if(verifica <= 450){
+  if(verifica <= 600){
     botao.classList.add('ativo')
   }else{
     botao.classList.remove('ativo')
   }
-  console.log(verifica)
  
 }
 
 window.addEventListener('scroll', aparecerBotaoScroll)
+
+
+//Anima foto
+
 
 
