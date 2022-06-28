@@ -34,6 +34,25 @@ window.addEventListener('scroll', aparecerBotaoScroll)
 
 
 //Anima foto
+const sessoes = document.querySelectorAll('.js-scroll')
+const metade = window.innerHeight * 0.5;
+function ScrollAnima(){
+  sessoes.forEach((sessao)=>{
+    sessaoTop = sessao.getBoundingClientRect().top
+    console.log(sessaoTop)
+    const seessaoInvi = (sessaoTop - metade) < 0
+    if(seessaoInvi){
+      sessao.classList.add('ativos')
+    }else{
+      sessao.classList.remove('ativos')
+    }
+  })
+}
+
+window.addEventListener('scroll',ScrollAnima)
+
+
+ScrollAnima()
 
 
 
