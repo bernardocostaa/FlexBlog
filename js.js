@@ -27,7 +27,6 @@ function aparecerBotaoScroll(){
   }else{
     botao.classList.remove('ativo')
   }
- 
 }
 
 window.addEventListener('scroll', aparecerBotaoScroll)
@@ -35,24 +34,47 @@ window.addEventListener('scroll', aparecerBotaoScroll)
 
 //Anima foto
 const sessoes = document.querySelectorAll('.js-scroll')
-const metade = window.innerHeight * 0.5;
+const metade = window.innerHeight * 0.8;
 function ScrollAnima(){
   sessoes.forEach((sessao)=>{
-    sessaoTop = sessao.getBoundingClientRect().top
-    console.log(sessaoTop)
+   const sessaoTop = sessao.getBoundingClientRect().top
     const seessaoInvi = (sessaoTop - metade) < 0
     if(seessaoInvi){
       sessao.classList.add('ativos')
     }else{
       sessao.classList.remove('ativos')
     }
+    console.log(metade)
   })
 }
 
-window.addEventListener('scroll',ScrollAnima)
+const imgsAnima = document.querySelector('.produtos-container')
+const metades = window.innerHeight * 0.3
+function animaProdutos(){
+  const blue = document.querySelector('.animaPurple')
+  const pink = document.querySelector('.animaPink')
+  const purple = document.querySelector('.animaBlue')
+    const AnimaTop = imgsAnima.getBoundingClientRect().top
+    const animaInvi = (AnimaTop - metades) > 0
+    if(animaInvi){
+      imgsAnima.classList.add('mostrar')
+      pink.classList.add('mostrar')
+      blue.classList.add('mostrar')
+      purple.classList.add('mostrar')
+    }else{
+      imgsAnima.classList.remove('mostrar')
+      pink.classList.remove('mostrar')
+      blue.classList.remove('mostrar')
+      purple.classList.remove('mostrar')
 
+    }
+}
+
+window.addEventListener('scroll',ScrollAnima)
+window.addEventListener('scroll',animaProdutos)
 
 ScrollAnima()
+animaProdutos()
 
 
 
