@@ -34,7 +34,7 @@ window.addEventListener('scroll', aparecerBotaoScroll)
 
 //Anima foto
 const sessoes = document.querySelectorAll('.js-scroll')
-const metade = window.innerHeight * 0.8;
+const metade = window.innerHeight * 0.5;
 function ScrollAnima(){
   sessoes.forEach((sessao)=>{
    const sessaoTop = sessao.getBoundingClientRect().top
@@ -49,7 +49,7 @@ function ScrollAnima(){
 }
 
 const imgsAnima = document.querySelector('.produtos-container')
-const metades = window.innerHeight * 0.3
+const metades = window.innerHeight * 0.4
 function animaProdutos(){
   const blue = document.querySelector('.animaPurple')
   const pink = document.querySelector('.animaPink')
