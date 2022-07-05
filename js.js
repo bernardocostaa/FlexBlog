@@ -91,13 +91,15 @@ function modalEmail(){
     showModal()
     cleanErro()
   }else{
-    email.style.borderColor = '#ff0000'
-    const erroElement = document.createElement('div')
-    erroElement.classList.add('error')
-    erroElement.innerHTML = 'Erro não é um email valido'; 
-    teste.parentElement.insertBefore(erroElement,valorInput.ElementSibling)   
+    if(!document.querySelector('.error')){
+      email.style.borderColor = '#ff0000'
+      const erroElement = document.createElement('div')
+      erroElement.classList.add('error')
+      erroElement.innerHTML = 'Erro não é um email valido'; 
+      teste.parentElement.insertBefore(erroElement,valorInput.ElementSibling)  
+    }
+   
   }
-  
   
 }
 
