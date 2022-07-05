@@ -44,7 +44,7 @@ function ScrollAnima(){
     }else{
       sessao.classList.remove('ativos')
     }
-    console.log(metade)
+    // console.log(metade)
   })
 }
 
@@ -72,6 +72,42 @@ function animaProdutos(){
 
 window.addEventListener('scroll',ScrollAnima)
 window.addEventListener('scroll',animaProdutos)
+
+const modal = document.querySelector('.modal-cont')
+const fechar = document.querySelector('.fechar')
+
+function showModal(){
+  if(modal && fechar)
+  modal.classList.toggle('ativo')
+}
+
+function modalEmail(){
+  const email = document.querySelector('.btn-email')
+  const teste = document.querySelector('.newsletter-info')
+  const valorInput = email.value
+  
+  if(valorInput.includes('@')){
+    email.style.borderColor = '#2c70ff'
+    showModal()
+    cleanErro()
+  }else{
+    email.style.borderColor = '#ff0000'
+    const erroElement = document.createElement('div')
+    erroElement.classList.add('error')
+    erroElement.innerHTML = 'Erro não é um email valido'; 
+    teste.parentElement.insertBefore(erroElement,valorInput.ElementSibling)   
+  }
+  
+  
+}
+
+function cleanErro(){
+  const tirarErro = document.querySelector('.error')
+  tirarErro.remove()
+}
+
+fechar.addEventListener('click', showModal);
+
 
 ScrollAnima()
 animaProdutos()

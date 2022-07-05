@@ -154,8 +154,8 @@
       <h1>Newsletter</h1>
       <p>assine e fique por dentro das novidades</p>
       <form class="newsletter-form">
-        <input type="text" placeholder="Seu e-mail">
-        <button type="submit">Assinar</button>
+        <input class="btn-email" type="text" placeholder="Seu e-mail">
+        <button class="btn" onclick="modalEmail()" type="button">Assinar</button>
       </form>
     </div>
   </section>
@@ -165,7 +165,18 @@
     <div onclick="subirTela()" class="bolaScroll ativo"></div>
   </footer>
 
-
+  <section class="modal-cont">
+  <div class="modal">
+    <button class="fechar">X</button>
+    <form action="">
+      <div class="ajuste">
+        <input class="check" type="checkbox" value="">
+        <label class="aceitar-text" for="">Aceitar os termos de receber notificação e email sobre as novidades do site</label>
+      </div>
+     <button class="btn-modal" type="submit">Aceito</button>
+    </form>
+  </div>
+</section>
   <script src="js.js"></script>
 </body>
 
