@@ -680,5 +680,6 @@ margin-top: 0 10px 10px 10px;
   }
   .menu-nav ul.ativarMobile{
     display: flex;
+    margin-top: 10px;
   }
 }
