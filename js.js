@@ -111,6 +111,15 @@ function cleanErro(){
 fechar.addEventListener('click', showModal);
 
 
+
+
+const mobile = document.querySelector('.nav-menu')
+function showMenu(){
+  mobile.classList.toggle('ativarMobile')
+}
+
+
+
 ScrollAnima()
 animaProdutos()
 
