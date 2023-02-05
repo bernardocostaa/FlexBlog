@@ -29,7 +29,7 @@ Link do Projeto: [FlexBlog](https://bernardocostaa.github.io/bikecraft/)
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/bikecraft/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/FlexBlog/blob/main/LICENSE) para mais detalhes.
 
 ---
 
