@@ -1,11 +1,36 @@
-# FlexBlog
+<h1 align="center">
+  FlexBlog
+</h1>
 
-### Projeto
+<p align="center">
+  <img alt="" src="https://raw.githubusercontent.com/bernardocostaa/bikecraft/main/templete2.jpg" width="100%">
+</p>
 
-Foi feito um site para praticar flexBox em HTML5, CSS3
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://bernardocostaa.github.io/bikecraft/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-### Template do Projeto
+<br>
 
-<img width="150" align="center" alt="Business_PNG" target="_blank" src="https://raw.githubusercontent.com/bernardocostaa/FlexBlog/main/img/bg-flexbox.png">
+## 🚀 Tecnologias
 
-## Acesse o Link: https://bernardocostaa.github.io/FlexBlog/
+Esse projeto está sendo desenvolvido com as seguintes tecnologias:
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 🚧 Projeto:
+
+Link do Projeto: [FlexBlog](https://bernardocostaa.github.io/bikecraft/)
+
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/bikecraft/blob/main/LICENSE) para mais detalhes.
+
+---
+
+Feito por Bernardo Costa
